@@ -16,6 +16,19 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Emergency from "./pages/Emergency";
 import ImageAnalysis from "./pages/ImageAnalysis";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import DoctorDashboard from "./pages/DoctorDashboard";
+import Appointments from "./pages/Appointments";
+import WearableIntegration from "./pages/WearableIntegration";
+import MultilingualTranslation from "./pages/MultilingualTranslation";
+import CommunityHealthInsights from "./pages/CommunityHealthInsights";
+import BlockchainHealthRecords from "./pages/BlockchainHealthRecords";
+import ARHospitalNavigation from "./pages/ARHospitalNavigation";
+import OfflineAIMode from "./pages/OfflineAIMode";
+import PredictiveHealthAnalytics from "./pages/PredictiveHealthAnalytics";
+import Testimonials from "./pages/Testimonials";
+import HowItWorks from "./pages/HowItWorks";
 
 const queryClient = new QueryClient();
 
