@@ -45,6 +45,7 @@ export default function Index() {
               <a href="#how-it-works" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">How It Works</a>
               <a href="#testimonials" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Testimonials</a>
               <Link to="/dashboard" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Dashboard</Link>
+              <LanguageSelector className="hidden lg:block" />
               <Link to="/login">
                 <Button variant="outline" className="glass-button">Sign In</Button>
               </Link>
