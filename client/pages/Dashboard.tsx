@@ -530,13 +530,15 @@ export default function Dashboard() {
                       AI Symptom Check
                     </Button>
                   </Link>
+                  <Link to="/image-analysis" className="block">
+                    <Button variant="outline" className="w-full glass-button justify-start">
+                      <Camera className="w-4 h-4 mr-3" />
+                      AI Image Analysis
+                    </Button>
+                  </Link>
                   <Button variant="outline" className="w-full glass-button justify-start">
                     <Pill className="w-4 h-4 mr-3" />
                     Medication Reminder
-                  </Button>
-                  <Button variant="outline" className="w-full glass-button justify-start">
-                    <Camera className="w-4 h-4 mr-3" />
-                    Upload Health Image
                   </Button>
                   <Button variant="outline" className="w-full glass-button justify-start">
                     <BarChart3 className="w-4 h-4 mr-3" />
