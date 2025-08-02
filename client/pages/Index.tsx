@@ -91,19 +91,30 @@ export default function Index() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/find-doctor">
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     className="bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500 hover:from-healthcare-blue-600 hover:to-healthcare-teal-600 shadow-lg hover:shadow-xl transition-all duration-300 text-lg px-8 py-6"
                   >
                     <Stethoscope className="w-5 h-5 mr-2" />
                     Find a Doctor
                   </Button>
                 </Link>
-                
+
+                <Link to="/image-analysis">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="glass-button shadow-lg hover:shadow-xl transition-all duration-300 text-lg px-8 py-6 border-2 border-purple-300 hover:border-purple-400"
+                  >
+                    <Brain className="w-5 h-5 mr-2" />
+                    AI Image Analysis
+                  </Button>
+                </Link>
+
                 <Link to="/ai-health-advice">
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
+                  <Button
+                    variant="outline"
+                    size="lg"
                     className="glass-button shadow-lg hover:shadow-xl transition-all duration-300 text-lg px-8 py-6"
                   >
                     <Bot className="w-5 h-5 mr-2" />
