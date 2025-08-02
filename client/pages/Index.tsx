@@ -178,9 +178,11 @@ export default function Index() {
                     </div>
                   </div>
                   
-                  <Button className="w-full bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500">
-                    Try AI Assistant
-                  </Button>
+                  <Link to="/symptom-checker">
+                    <Button className="w-full bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500">
+                      Try AI Assistant
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
