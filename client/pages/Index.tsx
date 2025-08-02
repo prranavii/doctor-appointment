@@ -376,6 +376,93 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Community Health Insights */}
+      <section className="py-20 px-6 bg-gradient-to-r from-healthcare-blue-50 to-healthcare-green-50">
+        <div className="container mx-auto">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-healthcare-blue-600 to-healthcare-teal-600 bg-clip-text text-transparent">
+              Community Health Insights
+            </h2>
+            <p className="text-xl text-healthcare-blue-700/80 max-w-2xl mx-auto">
+              AI-powered community health monitoring keeps you informed about local health trends
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="glass-card p-6 text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-red-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Flu Activity</h3>
+              <div className="text-3xl font-bold text-red-500 mb-2">High</div>
+              <p className="text-sm text-gray-600 mb-4">24% increase in your area this week</p>
+              <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+                <p className="text-sm text-red-700">💡 AI Recommendation:</p>
+                <p className="text-xs text-red-600 mt-1">Get your flu shot if you haven't already. Wash hands frequently.</p>
+              </div>
+            </div>
+
+            <div className="glass-card p-6 text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Activity className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-yellow-600 mb-2">Allergy Alert</h3>
+              <div className="text-3xl font-bold text-yellow-500 mb-2">Moderate</div>
+              <p className="text-sm text-gray-600 mb-4">Pollen count rising in San Francisco</p>
+              <div className="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
+                <p className="text-sm text-yellow-700">💡 AI Recommendation:</p>
+                <p className="text-xs text-yellow-600 mt-1">Keep windows closed. Consider antihistamines if sensitive.</p>
+              </div>
+            </div>
+
+            <div className="glass-card p-6 text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-healthcare-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-green-600 mb-2">Air Quality</h3>
+              <div className="text-3xl font-bold text-green-500 mb-2">Good</div>
+              <p className="text-sm text-gray-600 mb-4">Safe for outdoor activities</p>
+              <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                <p className="text-sm text-green-700">💡 AI Recommendation:</p>
+                <p className="text-xs text-green-600 mt-1">Perfect weather for outdoor exercise. Stay hydrated!</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="glass-card p-8">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h3 className="text-2xl font-bold text-healthcare-blue-700 mb-2">Weekly Health Trends</h3>
+                <p className="text-healthcare-blue-600">AI-analyzed data from your community</p>
+              </div>
+              <Button variant="outline" className="glass-button">
+                <TrendingUp className="w-4 h-4 mr-2" />
+                View Full Report
+              </Button>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-healthcare-blue-600">↗️ 15%</div>
+                <div className="text-sm text-gray-600">Preventive Care Visits</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-healthcare-green-600">↘️ 8%</div>
+                <div className="text-sm text-gray-600">Emergency Room Visits</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-healthcare-teal-600">↗️ 22%</div>
+                <div className="text-sm text-gray-600">Telemedicine Usage</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-purple-600">↗️ 18%</div>
+                <div className="text-sm text-gray-600">Mental Health Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6 gradient-mesh">
         <div className="container mx-auto text-center space-y-8">
