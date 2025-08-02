@@ -211,79 +211,93 @@ export default function Index() {
                 title: "AI Image Analysis + Computer Vision",
                 description: "Revolutionary computer vision technology analyzes uploaded images of skin conditions, eye problems, wounds, and oral health to provide instant medical insights and specialist recommendations.",
                 gradient: "from-purple-500 to-pink-500",
-                badge: "👁️ Vision AI"
+                badge: "👁️ Vision AI",
+                link: "/image-analysis"
               },
               {
                 icon: Activity,
                 title: "Wearable & IoT Integration",
                 description: "Real-time data from smartwatches and fitness trackers enables early health warnings and predictive care recommendations.",
                 gradient: "from-purple-500 to-pink-500",
-                badge: "⌚ Smart Data"
+                badge: "⌚ Smart Data",
+                link: "/wearable-integration"
               },
               {
                 icon: Heart,
                 title: "Emergency Mode & Panic Button",
                 description: "One-tap emergency alerts nearest doctors, shares live location, and provides instant access to your medical history.",
                 gradient: "from-red-500 to-orange-500",
-                badge: "🚨 Life-Saving"
+                badge: "🚨 Life-Saving",
+                link: "/emergency"
               },
               {
                 icon: Clock,
                 title: "Multilingual AI Translation",
                 description: "Real-time AI translation supports 50+ languages for voice and text communication during consultations and booking.",
                 gradient: "from-healthcare-green-500 to-healthcare-teal-500",
-                badge: "🌍 Global AI"
+                badge: "🌍 Global AI",
+                link: "/multilingual-translation"
               },
               {
                 icon: Star,
                 title: "Community Health Insights",
                 description: "AI detects local health trends (flu outbreaks, allergies) and sends preventive care recommendations to keep you healthy.",
                 gradient: "from-healthcare-blue-500 to-purple-500",
-                badge: "📊 Trend AI"
+                badge: "📊 Trend AI",
+                link: "/community-health-insights"
               },
               {
                 icon: Shield,
                 title: "Blockchain Health Records",
                 description: "End-to-end encrypted medical records with blockchain security ensure your health data remains private and secure.",
                 gradient: "from-healthcare-teal-500 to-healthcare-green-500",
-                badge: "🔒 Blockchain"
+                badge: "🔒 Blockchain",
+                link: "/blockchain-health-records"
               },
               {
                 icon: Users,
                 title: "AR Hospital Navigation",
                 description: "Augmented Reality guides you through hospitals with turn-by-turn directions and 3D doctor profile cards.",
                 gradient: "from-indigo-500 to-purple-500",
-                badge: "🥽 AR/VR"
+                badge: "🥽 AR/VR",
+                link: "/ar-hospital-navigation"
               },
               {
                 icon: Sparkles,
                 title: "Offline AI Mode (PWA)",
                 description: "Basic AI symptom checking works offline, automatically syncing your data when connectivity returns.",
                 gradient: "from-healthcare-green-500 to-healthcare-blue-500",
-                badge: "📱 PWA"
+                badge: "📱 PWA",
+                link: "/offline-ai-mode"
               },
               {
                 icon: TrendingUp,
                 title: "Predictive Health Analytics",
                 description: "AI analyzes your health patterns to predict potential issues weeks in advance and suggest preventive measures.",
                 gradient: "from-orange-500 to-red-500",
-                badge: "🔮 Predictive"
+                badge: "🔮 Predictive",
+                link: "/predictive-health-analytics"
               }
             ].map((feature, index) => (
-              <div key={index} className="glass-card p-6 hover:scale-105 transition-all duration-300 group relative overflow-hidden">
-                <div className="absolute top-3 right-3 px-2 py-1 bg-white/80 rounded-full text-xs font-bold text-gray-700 border">
-                  {feature.badge}
+              <Link key={index} to={feature.link}>
+                <div className="glass-card p-6 hover:scale-105 transition-all duration-300 group relative overflow-hidden cursor-pointer">
+                  <div className="absolute top-3 right-3 px-2 py-1 bg-white/80 rounded-full text-xs font-bold text-gray-700 border">
+                    {feature.badge}
+                  </div>
+                  <div className={`w-12 h-12 bg-gradient-to-r ${feature.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
+                    <feature.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-healthcare-blue-700 mb-2">{feature.title}</h3>
+                  <p className="text-healthcare-blue-600/80 leading-relaxed">{feature.description}</p>
+                  <div className="mt-4 flex items-center justify-between">
+                    <div className="flex items-center text-sm text-healthcare-blue-500">
+                      <Sparkles className="w-4 h-4 mr-1" />
+                      <span>AI-Powered</span>
+                    </div>
+                    <ChevronRight className="w-4 h-4 text-healthcare-blue-400 group-hover:text-healthcare-blue-600 transition-colors" />
+                  </div>
                 </div>
-                <div className={`w-12 h-12 bg-gradient-to-r ${feature.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
-                  <feature.icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-healthcare-blue-700 mb-2">{feature.title}</h3>
-                <p className="text-healthcare-blue-600/80 leading-relaxed">{feature.description}</p>
-                <div className="mt-4 flex items-center text-sm text-healthcare-blue-500">
-                  <Sparkles className="w-4 h-4 mr-1" />
-                  <span>AI-Powered</span>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
