@@ -559,18 +559,18 @@ export default function Index() {
             <div>
               <h4 className="font-semibold text-healthcare-blue-700 mb-4">Company</h4>
               <div className="space-y-2">
-                <a href="#" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">About Us</a>
-                <a href="#" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Careers</a>
-                <a href="#" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Press</a>
+                <Link to="/about" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">About Us</Link>
+                <Link to="/testimonials" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Careers</Link>
+                <Link to="/testimonials" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Press</Link>
               </div>
             </div>
-            
+
             <div>
               <h4 className="font-semibold text-healthcare-blue-700 mb-4">Support</h4>
               <div className="space-y-2">
-                <a href="#" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Help Center</a>
-                <a href="#" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Contact Us</a>
-                <a href="#" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Privacy Policy</a>
+                <Link to="/how-it-works" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Help Center</Link>
+                <Link to="/contact" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Contact Us</Link>
+                <Link to="/about" className="block text-healthcare-blue-600/70 hover:text-healthcare-blue-600">Privacy Policy</Link>
               </div>
             </div>
           </div>
