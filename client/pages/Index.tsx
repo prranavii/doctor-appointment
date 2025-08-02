@@ -42,10 +42,15 @@ export default function Index() {
               <a href="#features" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Features</a>
               <a href="#how-it-works" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">How It Works</a>
               <a href="#testimonials" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Testimonials</a>
-              <Button variant="outline" className="glass-button">Sign In</Button>
-              <Button className="bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500 hover:from-healthcare-blue-600 hover:to-healthcare-teal-600">
-                Get Started
-              </Button>
+              <Link to="/dashboard" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Dashboard</Link>
+              <Link to="/login">
+                <Button variant="outline" className="glass-button">Sign In</Button>
+              </Link>
+              <Link to="/signup">
+                <Button className="bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500 hover:from-healthcare-blue-600 hover:to-healthcare-teal-600">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
