@@ -11,6 +11,8 @@ import NotFound from "./pages/NotFound";
 import SymptomChecker from "./pages/SymptomChecker";
 import FindDoctor from "./pages/FindDoctor";
 import AIHealthAdvice from "./pages/AIHealthAdvice";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const queryClient = new QueryClient();
 
