@@ -43,9 +43,9 @@ export default function Login() {
     <div className="min-h-screen bg-gradient-to-br from-healthcare-blue-50 via-white to-healthcare-green-50 flex items-center justify-center p-6">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-10 -right-10 w-72 h-72 bg-gradient-to-r from-brand-purple-200 to-brand-pink-200 rounded-full opacity-20 animate-float"></div>
-        <div className="absolute -bottom-10 -left-10 w-96 h-96 bg-gradient-to-r from-brand-violet-200 to-brand-cyan-200 rounded-full opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-r from-brand-pink-300 to-brand-purple-300 rounded-full opacity-10 animate-float" style={{animationDelay: '4s'}}></div>
+        <div className="absolute -top-10 -right-10 w-72 h-72 bg-gradient-to-r from-healthcare-blue-200 to-healthcare-teal-200 rounded-full opacity-20 animate-float"></div>
+        <div className="absolute -bottom-10 -left-10 w-96 h-96 bg-gradient-to-r from-healthcare-green-200 to-healthcare-teal-200 rounded-full opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-r from-healthcare-teal-300 to-healthcare-blue-300 rounded-full opacity-10 animate-float" style={{animationDelay: '4s'}}></div>
       </div>
 
       <div className="relative z-10 w-full max-w-md">
