@@ -156,20 +156,24 @@ export default function Index() {
                   <div className="space-y-4">
                     <div className="bg-healthcare-blue-50 rounded-lg p-3">
                       <p className="text-sm text-healthcare-blue-700">
-                        Hi! I'm analyzing your symptoms. Based on your description, I recommend seeing a cardiologist.
+                        📷 I've analyzed your skin image using computer vision. It appears to be contact dermatitis with 87% confidence.
                       </p>
                     </div>
-                    
+
                     <div className="bg-white rounded-lg p-3 shadow-soft">
+                      <div className="flex items-center space-x-2 mb-2">
+                        <div className="w-12 h-8 bg-gray-200 rounded border"></div>
+                        <p className="text-xs text-healthcare-blue-600">Image uploaded</p>
+                      </div>
                       <p className="text-sm text-healthcare-blue-700">
-                        Thank you! Can you book an appointment with Dr. Sarah Chen?
+                        Can you recommend a specialist?
                       </p>
                     </div>
-                    
+
                     <div className="bg-healthcare-green-50 rounded-lg p-3">
                       <p className="text-sm text-healthcare-green-700">
-                        ✅ Appointment booked for tomorrow at 2:00 PM with Dr. Chen. 
-                        Pre-diagnosis report sent to doctor.
+                        🎯 I recommend Dr. Rodriguez (Dermatologist). Booking appointment for today at 3:00 PM.
+                        Urgency: Medium priority.
                       </p>
                     </div>
                   </div>
@@ -463,7 +467,7 @@ export default function Index() {
                 <div className="text-sm text-gray-600">Emergency Room Visits</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-healthcare-teal-600">↗️ 22%</div>
+                <div className="text-2xl font-bold text-healthcare-teal-600">↗��� 22%</div>
                 <div className="text-sm text-gray-600">Telemedicine Usage</div>
               </div>
               <div className="text-center">
