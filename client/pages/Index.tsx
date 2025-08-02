@@ -1,19 +1,21 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { 
-  Heart, 
-  Brain, 
-  Activity, 
-  Users, 
-  Clock, 
-  Shield, 
+import LanguageSelector from "@/components/LanguageSelector";
+import {
+  Heart,
+  Brain,
+  Activity,
+  Users,
+  Clock,
+  Shield,
   Star,
   Play,
   ChevronRight,
   Stethoscope,
   Bot,
-  Sparkles
+  Sparkles,
+  TrendingUp
 } from "lucide-react";
 
 export default function Index() {
