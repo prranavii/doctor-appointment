@@ -208,10 +208,10 @@ export default function Index() {
             {[
               {
                 icon: Brain,
-                title: "AI Symptom-to-Specialist Matcher",
-                description: "Advanced NLP + Computer Vision + Voice Recognition analyzes symptoms from text, speech, and images to match you with the perfect specialist.",
-                gradient: "from-healthcare-blue-500 to-healthcare-teal-500",
-                badge: "🧠 Neural AI"
+                title: "AI Image Analysis + Computer Vision",
+                description: "Revolutionary computer vision technology analyzes uploaded images of skin conditions, eye problems, wounds, and oral health to provide instant medical insights and specialist recommendations.",
+                gradient: "from-purple-500 to-pink-500",
+                badge: "👁️ Vision AI"
               },
               {
                 icon: Activity,
@@ -467,7 +467,7 @@ export default function Index() {
                 <div className="text-sm text-gray-600">Emergency Room Visits</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-healthcare-teal-600">↗��� 22%</div>
+                <div className="text-2xl font-bold text-healthcare-teal-600">↗️ 22%</div>
                 <div className="text-sm text-gray-600">Telemedicine Usage</div>
               </div>
               <div className="text-center">
