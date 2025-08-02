@@ -851,6 +851,12 @@ export default function SymptomChecker() {
                           Find Specialists
                         </Button>
                       </Link>
+                      <Link to="/image-analysis" className="block">
+                        <Button variant="outline" className="w-full glass-button text-sm">
+                          <Camera className="w-4 h-4 mr-2" />
+                          AI Image Analysis
+                        </Button>
+                      </Link>
                       <Button variant="outline" className="w-full glass-button text-sm">
                         <MapPin className="w-4 h-4 mr-2" />
                         Emergency Care
