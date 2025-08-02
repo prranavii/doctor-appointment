@@ -14,6 +14,7 @@ import AIHealthAdvice from "./pages/AIHealthAdvice";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
+import Emergency from "./pages/Emergency";
 
 const queryClient = new QueryClient();
 
