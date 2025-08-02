@@ -128,7 +128,7 @@ export default function Login() {
                   type="checkbox"
                   checked={rememberMe}
                   onChange={(e) => setRememberMe(e.target.checked)}
-                  className="h-4 w-4 text-brand-purple-600 focus:ring-brand-purple-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-healthcare-blue-600 focus:ring-healthcare-blue-500 border-gray-300 rounded"
                 />
                 <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
                   Remember me
