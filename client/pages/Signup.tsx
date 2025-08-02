@@ -187,14 +187,14 @@ export default function Signup() {
               <div key={step} className="flex items-center">
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
                   step <= currentStep 
-                    ? 'bg-gradient-to-r from-brand-purple-500 to-brand-pink-500 text-white' 
+                    ? 'bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500 text-white'
                     : 'bg-gray-200 text-gray-400'
                 }`}>
                   {step < currentStep ? <CheckCircle className="w-4 h-4" /> : step}
                 </div>
                 {step < 3 && (
                   <div className={`w-12 h-1 mx-2 ${
-                    step < currentStep ? 'bg-gradient-to-r from-brand-purple-500 to-brand-pink-500' : 'bg-gray-200'
+                    step < currentStep ? 'bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500' : 'bg-gray-200'
                   }`} />
                 )}
               </div>
