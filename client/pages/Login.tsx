@@ -214,15 +214,15 @@ export default function Login() {
         {/* Features Preview */}
         <div className="mt-8 grid grid-cols-3 gap-4 text-center">
           <div className="glass p-4 rounded-xl">
-            <Zap className="w-6 h-6 text-brand-purple-500 mx-auto mb-2" />
+            <Zap className="w-6 h-6 text-healthcare-blue-500 mx-auto mb-2" />
             <p className="text-xs text-gray-600">AI-Powered</p>
           </div>
           <div className="glass p-4 rounded-xl">
-            <Shield className="w-6 h-6 text-brand-pink-500 mx-auto mb-2" />
+            <Shield className="w-6 h-6 text-healthcare-green-500 mx-auto mb-2" />
             <p className="text-xs text-gray-600">Secure & Private</p>
           </div>
           <div className="glass p-4 rounded-xl">
-            <Heart className="w-6 h-6 text-brand-violet-500 mx-auto mb-2" />
+            <Heart className="w-6 h-6 text-healthcare-teal-500 mx-auto mb-2" />
             <p className="text-xs text-gray-600">24/7 Care</p>
           </div>
         </div>
