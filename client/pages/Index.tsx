@@ -42,8 +42,8 @@ export default function Index() {
             
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Features</a>
-              <a href="#how-it-works" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">How It Works</a>
-              <a href="#testimonials" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Testimonials</a>
+              <Link to="/how-it-works" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">How It Works</Link>
+              <Link to="/testimonials" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Testimonials</Link>
               <Link to="/dashboard" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">Dashboard</Link>
               <Link to="/image-analysis" className="text-healthcare-blue-700 hover:text-healthcare-blue-600 transition-colors">AI Vision</Link>
               <LanguageSelector className="hidden lg:block" />
