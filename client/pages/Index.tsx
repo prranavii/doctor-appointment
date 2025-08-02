@@ -467,10 +467,12 @@ export default function Index() {
                 <h3 className="text-2xl font-bold text-healthcare-blue-700 mb-2">Weekly Health Trends</h3>
                 <p className="text-healthcare-blue-600">AI-analyzed data from your community</p>
               </div>
-              <Button variant="outline" className="glass-button">
-                <TrendingUp className="w-4 h-4 mr-2" />
-                View Full Report
-              </Button>
+              <Link to="/community-health-insights">
+                <Button variant="outline" className="glass-button">
+                  <TrendingUp className="w-4 h-4 mr-2" />
+                  View Full Report
+                </Button>
+              </Link>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
