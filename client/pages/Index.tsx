@@ -422,6 +422,27 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      {/* Emergency Mode - Floating Panic Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <button
+          onClick={() => {
+            // Trigger emergency mode
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition((position) => {
+                alert(`🚨 EMERGENCY ACTIVATED 🚨\n\nLocation: ${position.coords.latitude}, ${position.coords.longitude}\n\nNotifying nearest available doctors...\nEstimated response time: 5-8 minutes\n\n(Demo Mode)`);
+              });
+            } else {
+              alert('🚨 EMERGENCY ACTIVATED 🚨\n\nNotifying nearest available doctors...\n(Demo Mode)');
+            }
+          }}
+          className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-full shadow-2xl flex items-center justify-center text-white font-bold text-lg animate-pulse hover:animate-none transition-all duration-300 hover:scale-110"
+          title="Emergency - Get immediate medical help"
+        >
+          🚨
+        </button>
+        <div className="absolute -top-2 -left-2 w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
+      </div>
     </div>
   );
 }
