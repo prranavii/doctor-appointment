@@ -15,6 +15,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Emergency from "./pages/Emergency";
+import ImageAnalysis from "./pages/ImageAnalysis";
 
 const queryClient = new QueryClient();
 
