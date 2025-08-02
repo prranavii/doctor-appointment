@@ -102,7 +102,7 @@ export default function Login() {
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="block w-full pl-10 pr-12 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 focus:border-transparent placeholder-gray-400 bg-white/50 backdrop-blur-sm"
+                  className="block w-full pl-10 pr-12 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 focus:border-transparent placeholder-gray-400 bg-white/50 backdrop-blur-sm"
                   placeholder="Enter your password"
                   required
                 />
