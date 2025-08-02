@@ -190,38 +190,65 @@ export default function Index() {
               {
                 icon: Brain,
                 title: "AI Symptom-to-Specialist Matcher",
-                description: "Advanced NLP analyzes your symptoms and instantly matches you with the right specialist and urgency level.",
-                gradient: "from-healthcare-blue-500 to-healthcare-teal-500"
+                description: "Advanced NLP + Computer Vision + Voice Recognition analyzes symptoms from text, speech, and images to match you with the perfect specialist.",
+                gradient: "from-healthcare-blue-500 to-healthcare-teal-500",
+                badge: "🧠 Neural AI"
               },
               {
                 icon: Activity,
-                title: "Personalized Pre-Diagnosis Report",
-                description: "AI generates comprehensive reports with symptoms, history, and risk predictions before your appointment.",
-                gradient: "from-healthcare-green-500 to-healthcare-teal-500"
+                title: "Wearable & IoT Integration",
+                description: "Real-time data from smartwatches and fitness trackers enables early health warnings and predictive care recommendations.",
+                gradient: "from-purple-500 to-pink-500",
+                badge: "⌚ Smart Data"
               },
               {
                 icon: Heart,
-                title: "AI Health Companion Dashboard",
-                description: "Get personalized tips, reminders, and follow-up care recommendations after booking.",
-                gradient: "from-healthcare-teal-500 to-healthcare-blue-500"
+                title: "Emergency Mode & Panic Button",
+                description: "One-tap emergency alerts nearest doctors, shares live location, and provides instant access to your medical history.",
+                gradient: "from-red-500 to-orange-500",
+                badge: "🚨 Life-Saving"
               },
               {
                 icon: Clock,
-                title: "Predictive Appointment Scheduling",
-                description: "Smart scheduling suggests optimal appointment slots based on patterns to minimize wait times.",
-                gradient: "from-healthcare-blue-500 to-healthcare-green-500"
+                title: "Multilingual AI Translation",
+                description: "Real-time AI translation supports 50+ languages for voice and text communication during consultations and booking.",
+                gradient: "from-healthcare-green-500 to-healthcare-teal-500",
+                badge: "🌍 Global AI"
               },
               {
                 icon: Star,
-                title: "Gamified Wellness Insights",
-                description: "Earn badges, track health progress, and achieve AI-driven micro-goals for better health.",
-                gradient: "from-healthcare-green-500 to-healthcare-blue-500"
+                title: "Community Health Insights",
+                description: "AI detects local health trends (flu outbreaks, allergies) and sends preventive care recommendations to keep you healthy.",
+                gradient: "from-healthcare-blue-500 to-purple-500",
+                badge: "📊 Trend AI"
               },
               {
                 icon: Shield,
-                title: "Real-time Doctor Availability",
-                description: "See live availability and book appointments instantly with one-click booking system.",
-                gradient: "from-healthcare-teal-500 to-healthcare-green-500"
+                title: "Blockchain Health Records",
+                description: "End-to-end encrypted medical records with blockchain security ensure your health data remains private and secure.",
+                gradient: "from-healthcare-teal-500 to-healthcare-green-500",
+                badge: "🔒 Blockchain"
+              },
+              {
+                icon: Users,
+                title: "AR Hospital Navigation",
+                description: "Augmented Reality guides you through hospitals with turn-by-turn directions and 3D doctor profile cards.",
+                gradient: "from-indigo-500 to-purple-500",
+                badge: "🥽 AR/VR"
+              },
+              {
+                icon: Sparkles,
+                title: "Offline AI Mode (PWA)",
+                description: "Basic AI symptom checking works offline, automatically syncing your data when connectivity returns.",
+                gradient: "from-healthcare-green-500 to-healthcare-blue-500",
+                badge: "📱 PWA"
+              },
+              {
+                icon: TrendingUp,
+                title: "Predictive Health Analytics",
+                description: "AI analyzes your health patterns to predict potential issues weeks in advance and suggest preventive measures.",
+                gradient: "from-orange-500 to-red-500",
+                badge: "🔮 Predictive"
               }
             ].map((feature, index) => (
               <div key={index} className="glass-card p-6 hover:scale-105 transition-all duration-300 group">
