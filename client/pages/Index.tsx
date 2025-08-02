@@ -251,12 +251,19 @@ export default function Index() {
                 badge: "🔮 Predictive"
               }
             ].map((feature, index) => (
-              <div key={index} className="glass-card p-6 hover:scale-105 transition-all duration-300 group">
-                <div className={`w-12 h-12 bg-gradient-to-r ${feature.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+              <div key={index} className="glass-card p-6 hover:scale-105 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-3 right-3 px-2 py-1 bg-white/80 rounded-full text-xs font-bold text-gray-700 border">
+                  {feature.badge}
+                </div>
+                <div className={`w-12 h-12 bg-gradient-to-r ${feature.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-healthcare-blue-700 mb-2">{feature.title}</h3>
                 <p className="text-healthcare-blue-600/80 leading-relaxed">{feature.description}</p>
+                <div className="mt-4 flex items-center text-sm text-healthcare-blue-500">
+                  <Sparkles className="w-4 h-4 mr-1" />
+                  <span>AI-Powered</span>
+                </div>
               </div>
             ))}
           </div>
