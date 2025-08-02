@@ -13,6 +13,7 @@ import FindDoctor from "./pages/FindDoctor";
 import AIHealthAdvice from "./pages/AIHealthAdvice";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
 
 const queryClient = new QueryClient();
 
