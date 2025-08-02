@@ -157,7 +157,7 @@ export default function Signup() {
   const passwordStrength = getPasswordStrength(formData.password);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-purple-50 via-white to-brand-pink-50 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-healthcare-blue-50 via-white to-healthcare-green-50 flex items-center justify-center p-6">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-10 -right-10 w-72 h-72 bg-gradient-to-r from-brand-purple-200 to-brand-pink-200 rounded-full opacity-20 animate-float"></div>
