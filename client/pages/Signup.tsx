@@ -226,7 +226,7 @@ export default function Signup() {
                         type="text"
                         value={formData.firstName}
                         onChange={(e) => handleInputChange('firstName', e.target.value)}
-                        className={`block w-full px-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
+                        className={`block w-full px-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
                           errors.firstName ? 'border-red-300' : 'border-gray-200'
                         }`}
                         placeholder="John"
@@ -247,7 +247,7 @@ export default function Signup() {
                         type="text"
                         value={formData.lastName}
                         onChange={(e) => handleInputChange('lastName', e.target.value)}
-                        className={`block w-full px-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
+                        className={`block w-full px-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
                           errors.lastName ? 'border-red-300' : 'border-gray-200'
                         }`}
                         placeholder="Doe"
@@ -272,7 +272,7 @@ export default function Signup() {
                       type="email"
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
-                      className={`block w-full pl-10 pr-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
+                      className={`block w-full pl-10 pr-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
                         errors.email ? 'border-red-300' : 'border-gray-200'
                       }`}
                       placeholder="john@example.com"
@@ -326,7 +326,7 @@ export default function Signup() {
                 <Button
                   type="button"
                   onClick={handleNext}
-                  className="w-full bg-gradient-to-r from-brand-purple-500 to-brand-pink-500 hover:from-brand-purple-600 hover:to-brand-pink-600 text-white font-semibold py-3 rounded-xl"
+                  className="w-full bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500 hover:from-healthcare-blue-600 hover:to-healthcare-teal-600 text-white font-semibold py-3 rounded-xl"
                 >
                   Continue
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -352,7 +352,7 @@ export default function Signup() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
-                      className={`block w-full pl-10 pr-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
+                      className={`block w-full pl-10 pr-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
                         errors.phone ? 'border-red-300' : 'border-gray-200'
                       }`}
                       placeholder="+1 (555) 123-4567"
@@ -376,7 +376,7 @@ export default function Signup() {
                       type="date"
                       value={formData.dateOfBirth}
                       onChange={(e) => handleInputChange('dateOfBirth', e.target.value)}
-                      className={`block w-full pl-10 pr-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 bg-white/50 backdrop-blur-sm ${
+                      className={`block w-full pl-10 pr-3 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 bg-white/50 backdrop-blur-sm ${
                         errors.dateOfBirth ? 'border-red-300' : 'border-gray-200'
                       }`}
                     />
@@ -401,7 +401,7 @@ export default function Signup() {
                   <Button
                     type="button"
                     onClick={handleNext}
-                    className="flex-1 bg-gradient-to-r from-brand-purple-500 to-brand-pink-500 hover:from-brand-purple-600 hover:to-brand-pink-600 text-white font-semibold py-3 rounded-xl"
+                    className="flex-1 bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500 hover:from-healthcare-blue-600 hover:to-healthcare-teal-600 text-white font-semibold py-3 rounded-xl"
                   >
                     Continue
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -428,7 +428,7 @@ export default function Signup() {
                       type={showPassword ? "text" : "password"}
                       value={formData.password}
                       onChange={(e) => handleInputChange('password', e.target.value)}
-                      className={`block w-full pl-10 pr-12 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
+                      className={`block w-full pl-10 pr-12 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
                         errors.password ? 'border-red-300' : 'border-gray-200'
                       }`}
                       placeholder="Create a strong password"
@@ -486,7 +486,7 @@ export default function Signup() {
                       type={showConfirmPassword ? "text" : "password"}
                       value={formData.confirmPassword}
                       onChange={(e) => handleInputChange('confirmPassword', e.target.value)}
-                      className={`block w-full pl-10 pr-12 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-purple-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
+                      className={`block w-full pl-10 pr-12 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-healthcare-blue-500 placeholder-gray-400 bg-white/50 backdrop-blur-sm ${
                         errors.confirmPassword ? 'border-red-300' : 'border-gray-200'
                       }`}
                       placeholder="Confirm your password"
@@ -518,15 +518,15 @@ export default function Signup() {
                       type="checkbox"
                       checked={formData.agreeToTerms}
                       onChange={(e) => handleInputChange('agreeToTerms', e.target.checked)}
-                      className="h-4 w-4 text-brand-purple-600 focus:ring-brand-purple-500 border-gray-300 rounded mt-1"
+                      className="h-4 w-4 text-healthcare-blue-600 focus:ring-healthcare-blue-500 border-gray-300 rounded mt-1"
                     />
                     <label className="ml-2 block text-sm text-gray-700">
                       I agree to the{" "}
-                      <Link to="/terms" className="text-brand-purple-600 hover:text-brand-purple-500 font-medium">
+                      <Link to="/terms" className="text-healthcare-blue-600 hover:text-healthcare-blue-500 font-medium">
                         Terms of Service
                       </Link>{" "}
                       and{" "}
-                      <Link to="/privacy" className="text-brand-purple-600 hover:text-brand-purple-500 font-medium">
+                      <Link to="/privacy" className="text-healthcare-blue-600 hover:text-healthcare-blue-500 font-medium">
                         Privacy Policy
                       </Link>
                     </label>
@@ -543,7 +543,7 @@ export default function Signup() {
                       type="checkbox"
                       checked={formData.agreeToNewsletter}
                       onChange={(e) => handleInputChange('agreeToNewsletter', e.target.checked)}
-                      className="h-4 w-4 text-brand-purple-600 focus:ring-brand-purple-500 border-gray-300 rounded mt-1"
+                      className="h-4 w-4 text-healthcare-blue-600 focus:ring-healthcare-blue-500 border-gray-300 rounded mt-1"
                     />
                     <label className="ml-2 block text-sm text-gray-700">
                       I'd like to receive health tips and updates via email
@@ -563,7 +563,7 @@ export default function Signup() {
                   <Button
                     type="submit"
                     disabled={isLoading}
-                    className="flex-1 bg-gradient-to-r from-brand-purple-500 to-brand-pink-500 hover:from-brand-purple-600 hover:to-brand-pink-600 text-white font-semibold py-3 rounded-xl"
+                    className="flex-1 bg-gradient-to-r from-healthcare-blue-500 to-healthcare-teal-500 hover:from-healthcare-blue-600 hover:to-healthcare-teal-600 text-white font-semibold py-3 rounded-xl"
                   >
                     {isLoading ? (
                       <div className="flex items-center justify-center">
@@ -586,7 +586,7 @@ export default function Signup() {
             Already have an account?{" "}
             <Link 
               to="/login" 
-              className="text-brand-purple-600 hover:text-brand-purple-500 font-semibold"
+              className="text-healthcare-blue-600 hover:text-healthcare-blue-500 font-semibold"
             >
               Sign in
             </Link>
